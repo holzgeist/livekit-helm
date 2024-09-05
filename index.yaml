@@ -1,0 +1,44 @@
+apiVersion: v1
+entries:
+  egress:
+  - apiVersion: v2
+    appVersion: v1.8.4
+    created: "2024-09-05T06:21:22.282806909Z"
+    description: Egress is used by LiveKit to stream and record rooms.
+    digest: de42a04e41fe34bad69f31f4d9830ec1ea1dec9d24cf94fa3b8786c9746b7e18
+    name: egress
+    sources:
+    - https://github.com/livekit/egress
+    type: application
+    urls:
+    - https://github.com/holzgeist/livekit-helm/releases/download/egress-1.8.4/egress-1.8.4.tgz
+    version: 1.8.4
+  ingress:
+  - apiVersion: v2
+    appVersion: v1.4.2
+    created: "2024-09-05T06:21:22.473822169Z"
+    description: Ingress is used by LiveKit to ingest streams produced by external
+      workflows
+    digest: 5ab037863e21a0f3bb104b0a87e3681dd20f6008832df035621769d1dde9e58c
+    name: ingress
+    sources:
+    - https://github.com/livekit/ingress
+    type: application
+    urls:
+    - https://github.com/holzgeist/livekit-helm/releases/download/ingress-1.4.2/ingress-1.4.2.tgz
+    version: 1.4.2
+  livekit-server:
+  - apiVersion: v2
+    appVersion: v1.7.2
+    created: "2024-09-05T06:21:22.655130871Z"
+    description: Real-time infrastructure for developers. LiveKit is the open source
+      stack for streaming audio, video, and data.
+    digest: 98a70a2b21250521f7f26d1ceda9dc5ff1d05f6aa836ac1fa6eb3f2436f381e0
+    name: livekit-server
+    sources:
+    - https://github.com/livekit/livekit
+    type: application
+    urls:
+    - https://github.com/holzgeist/livekit-helm/releases/download/livekit-server-1.7.2/livekit-server-1.7.2.tgz
+    version: 1.7.2
+generated: "2024-09-05T06:21:22.655135139Z"
