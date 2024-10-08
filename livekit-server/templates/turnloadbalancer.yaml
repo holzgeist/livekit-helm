@@ -15,11 +15,6 @@ spec:
     - port: 443
       targetPort: {{ .Values.livekit.turn.tls_port }}
       protocol: TCP
-    {{- if .Values.livekit.turn.udp_port }}
-    - port: {{ .Values.livekit.turn.udp_port }}
-      targetPort: {{ .Values.livekit.turn.udp_port }}
-      protocol: UDP
-    {{- end }}
   selector:
     {{- include "livekit-server.selectorLabels" . | nindent 4 }}
 {{- end }}
