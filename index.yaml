@@ -30,19 +30,6 @@ entries:
   livekit-server:
   - apiVersion: v2
     appVersion: v1.7.2
-    created: "2024-09-05T07:10:08.867371468Z"
-    description: Real-time infrastructure for developers. LiveKit is the open source
-      stack for streaming audio, video, and data.
-    digest: 325b2339fb333b9e20bed219d55783d95df7a5df5947699335ba020ea66c5d2b
-    name: livekit-server
-    sources:
-    - https://github.com/livekit/livekit
-    type: application
-    urls:
-    - https://github.com/holzgeist/livekit-helm/releases/download/livekit-server-1.7.3/livekit-server-1.7.3.tgz
-    version: 1.7.3
-  - apiVersion: v2
-    appVersion: v1.7.2
     created: "2024-10-08T11:21:15.1383843Z"
     description: Real-time infrastructure for developers. LiveKit is the open source
       stack for streaming audio, video, and data.
