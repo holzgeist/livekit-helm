@@ -43,6 +43,19 @@ entries:
     version: 1.7.3
   - apiVersion: v2
     appVersion: v1.7.2
+    created: "2024-10-08T11:04:31.641582502Z"
+    description: Real-time infrastructure for developers. LiveKit is the open source
+      stack for streaming audio, video, and data.
+    digest: 2bf8f475b6f8b1e2c4c24b6cf8d8ca784f96fe0c1ddc1c65ed16de6cf6527209
+    name: livekit-server
+    sources:
+    - https://github.com/livekit/livekit
+    type: application
+    urls:
+    - https://github.com/holzgeist/livekit-helm/releases/download/livekit-server-1.7.3-insta5/livekit-server-1.7.3-insta5.tgz
+    version: 1.7.3-insta5
+  - apiVersion: v2
+    appVersion: v1.7.2
     created: "2024-10-08T07:02:21.616058962Z"
     description: Real-time infrastructure for developers. LiveKit is the open source
       stack for streaming audio, video, and data.
@@ -106,4 +119,4 @@ entries:
     urls:
     - https://github.com/holzgeist/livekit-helm/releases/download/livekit-server-1.7.2/livekit-server-1.7.2.tgz
     version: 1.7.2
-generated: "2024-10-08T07:02:21.616110097Z"
+generated: "2024-10-08T11:04:31.641647314Z"
