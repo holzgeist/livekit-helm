@@ -76,10 +76,10 @@ spec:
               hostPort: {{ .Values.livekit.rtc.tcp_port }}
               protocol: TCP
             {{- end }}
-            {{- if (include "livekit-server.prometheus_port" .) }}
+            {{- with (include "livekit-server.prometheus_port" .) }}
             - name: metrics
-              containerPort: {{ include "livekit-server.prometheus_port" . }}
-              hostPort: {{ include "livekit-server.prometheus_port" . }}
+              containerPort: {{ . }}
+              hostPort: {{ . }}
               protocol: TCP
             {{- end }}
             {{- if .Values.livekit.turn.enabled }}

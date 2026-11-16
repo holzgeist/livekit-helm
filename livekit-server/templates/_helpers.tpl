@@ -83,7 +83,6 @@ Create the name of the service monitor secret to use
 Load prometheus port from old or new config
 */}}
 {{- define "livekit-server.prometheus_port" -}}
-{{- if or .Values.livekit.prometheus_port (and .Values.livekit.prometheus .Values.livekit.prometheus.port) }}
-{{- default .Values.livekit.prometheus_port .Values.livekit.prometheus.port }}
-{{- end }}
+{{- $prometheus := .Values.livekit.prometheus | default dict }}
+{{- default .Values.livekit.prometheus_port $prometheus.port }}
 {{- end }}

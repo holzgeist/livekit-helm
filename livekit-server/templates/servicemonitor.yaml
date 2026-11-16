@@ -14,7 +14,8 @@ spec:
     - port: metrics
       path: /
       interval: {{ .Values.serviceMonitor.interval }}
-      {{- if and .Values.livekit.prometheus.username .Values.livekit.prometheus.password }}
+      {{- $prometheus := .Values.livekit.prometheus | default dict }}
+      {{- if and $prometheus.username $prometheus.password }}
       basicAuth:
         password:
           name: {{ include "livekit-server.serviceMonitorSecretName" . }}
